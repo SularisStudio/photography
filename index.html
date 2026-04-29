@@ -1,17 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sularis Studio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <h1>Hello!</h1>
-  <p>This is my first site.</p>
+  <header>
+    <h1>Sularis Studio</h1>
+    <p>Photography & Visual Storytelling</p>
+  </header>
 
-  <button onclick="sayHi()">Click me</button>
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="hero">
+    <h2>Capturing moments that matter</h2>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="grid">
+      <img src="https://source.unsplash.com/random/600x600?nature" />
+      <img src="https://source.unsplash.com/random/600x600?portrait" />
+      <img src="https://source.unsplash.com/random/600x600?city" />
+      <img src="https://source.unsplash.com/random/600x600?landscape" />
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      Welcome to my photography portfolio. I focus on capturing emotion,
+      light, and storytelling through images.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@example.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Sularis Studio</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
- 
