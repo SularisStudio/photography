@@ -310,3 +310,15 @@ button:hover {
   color: #777;
   margin-bottom: 20px;
 }
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 40px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 20px;
+}
