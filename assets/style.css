@@ -176,6 +176,7 @@ button:hover {
   
   position: relative;
   /* background image */
+  background: red;
   background-image: url("../images/Home1.jpg");
   background-size: cover;
   background-position: center 30%;
