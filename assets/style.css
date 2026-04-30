@@ -158,7 +158,7 @@ button:hover {
   z-index: 1;
 
   /* moves text within hero header */
- transform: translateY(clamp(40px, 8vh, 90px));
+ transform: translateY(clamp(80px, 15vh, 180px));
 }
 
 .hero-bg h1 {
