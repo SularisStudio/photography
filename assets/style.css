@@ -131,13 +131,13 @@ button:hover {
 .hero-bg {
   height: 90vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center; /* use to be center*/
   text-align: center;
+
+  padding-bottom: 80px;
   
   position: relative;
-  color: white;
-
   /* background image */
   background-image: url("../images/home1.jpg");
   background-size: cover;
@@ -150,6 +150,7 @@ button:hover {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.15);
+  z-index: 0;
 }
 
 /* FLOATING GLASS BOX */
@@ -162,13 +163,13 @@ button:hover {
   border-radius: 20px;
 
   /* 🎯 CONTROL THIS FOR OPACITY */
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.12);
 
   /* glass blur effect */
   backdrop-filter: blur(12px);
 
   /* soft shadow = floating feel */
-  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
 
   color: white;
   max-width: 600px;
@@ -183,14 +184,7 @@ button:hover {
   box-shadow: 0 30px 80px rgba(0,0,0,0.35);
 }
 
-/* keeps text above overlay */
-.hero-content {
-  position: relative;
-  z-index: 1;
 
-  /* moves text within hero header */
- transform: translateY(clamp(100px, 17vh, 200px));
-}
 
 .hero-bg h1 {
   font-size: 60px;
@@ -202,9 +196,4 @@ button:hover {
   opacity: 0.9;
 }
 
-/* MOBILE ADJUSTMENTS */
-@media (max-width: 768px) {
-  .hero-content {
-    transform: translateY(30px);
-  }
-}
+
