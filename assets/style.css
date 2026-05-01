@@ -24,6 +24,14 @@ body {
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
+.logo {
+  position: absolute;
+  left: 24px;
+
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .nav-links {
   display: flex;
   gap: 12px;
@@ -399,6 +407,7 @@ button:hover {
 
   .hamburger {
     display: block;
+    position: right;
     font-size: 26px;
     cursor: pointer;
   }
@@ -447,3 +456,5 @@ button:hover {
     max-width: 90%;
   }
 }
+
+
