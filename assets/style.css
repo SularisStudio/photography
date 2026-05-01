@@ -380,43 +380,7 @@ button:hover {
   color: #777;
 }
 
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 38px;
-  }
 
-  .header p {
-    font-size: 14px;
-  }
-
-  .hero-content-box {
-    padding: 20px 22px;
-    max-width: 90%;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  button {
-    padding: 10px 16px;
-  }
-
-  .hero-bg h1 {
-  font-size: 38px;
-}
-
-.hero-bg p {
-  font-size: 14px;
-}
-
-.hero-content-box {
-  padding: 20px 22px;
-  max-width: 90%;
-}
-  
-}
 
 /* desktop default */
 .hamburger {
