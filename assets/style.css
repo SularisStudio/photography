@@ -569,6 +569,14 @@ input:focus, textarea:focus {
   flex-shrink: 0;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 @media (max-width: 900px) {
 
   .hamburger {
