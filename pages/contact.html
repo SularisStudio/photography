@@ -30,13 +30,25 @@
   <h1>Contact</h1>
 </div>
 
-<form action="https://formspree.io/f/xrejblpd" method="POST" class="contact-form">
+<form action="https://formspree.io/f/YOUR_ID" method="POST" class="contact-form">
 
   <input type="text" name="name" placeholder="Your Name" required>
 
   <input type="email" name="email" placeholder="Your Email" required>
 
-  <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+  <select name="service" required>
+    <option value="">What are you interested in?</option>
+    <option value="wedding">Wedding</option>
+    <option value="senior">Senior Photos</option>
+    <option value="family">Family Session</option>
+    <option value="other">Other</option>
+  </select>
+
+  <input type="date" name="preferred_date">
+
+  <input type="text" name="location" placeholder="Location (optional)">
+
+  <textarea name="message" placeholder="Tell me about your session..." rows="6" required></textarea>
 
   <button type="submit">Send Message</button>
 
