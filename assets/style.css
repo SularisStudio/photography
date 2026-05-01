@@ -11,6 +11,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  flex-wrap: nowrap;
 
   display: flex;
   justify-content: center;
@@ -23,12 +24,24 @@ body {
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
+.nav-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 .nav-links a {
   padding: 10px 18px;
   border-radius: 999px;
   will-change: transform;
   border: 1px solid rgba(0, 0, 0, 0.08);
   background: rgba(255, 255, 255, 0.6);
+ 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90px;
+  text-align: center;
 
   text-decoration: none;
   color: #333;
