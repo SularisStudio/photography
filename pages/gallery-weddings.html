@@ -1,49 +1,90 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gallery</title>
-  <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
-
-<div class="nav">
-
-  <div class="logo">Sularis Studio</div>
-
-  <!-- hamburger icon (mobile only) -->
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-  <!-- links -->
-  <div class="nav-links" id="navLinks">
-    <a href="../index.html">Home</a>
-    <a href="gallery.html" class="active">Gallery</a>
-    <a href="about.html" >About</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="contact.html">Contact</a>
   </div>
 
-</div>
-  
-<div class="header">
-  <h1>Gallery</h1>
-</div>
-
-<div class="section">
-  <div class="gallery">
-    <img src="https://source.unsplash.com/random/800x1000?nature">
-    <img src="https://source.unsplash.com/random/800x1000?portrait">
-    <img src="https://source.unsplash.com/random/800x1000?city">
-    <img src="https://source.unsplash.com/random/800x1000?light">
-    <img src="https://source.unsplash.com/random/800x1000?street">
-    <img src="https://source.unsplash.com/random/800x1000?landscape">
+  <div class="gallery-item">
+    <img src="../images/wedding2.jpg" onclick="openLightbox(1)">
   </div>
+
+  <div class="gallery-item">
+    <img src="../images/wedding3.jpg" onclick="openLightbox(2)">
+  </div>
+
+  <div class="gallery-item">
+    <img src="../images/wedding4.jpg" onclick="openLightbox(3)">
+  </div>
+
+  <div class="gallery-item">
+    <img src="../images/wedding5.jpg" onclick="openLightbox(4)">
+  </div>
+
+  <div class="gallery-item">
+    <img src="../images/wedding6.jpg" onclick="openLightbox(5)">
+  </div>
+
+</section>
+
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+
+  <span class="close" onclick="closeLightbox()">×</span>
+
+  <span class="arrow left" onclick="changeSlide(-1)">❮</span>
+
+  <img id="lightbox-img">
+
+  <span class="arrow right" onclick="changeSlide(1)">❯</span>
+
 </div>
 
-<footer>© 2026 Sularis Studio</footer>
+<footer>
+  © 2026 Sularis Studio
+</footer>
+
+<script>
+
+const images = [
+  "../images/wedding1.jpg",
+  "../images/wedding2.jpg",
+  "../images/wedding3.jpg",
+  "../images/wedding4.jpg",
+  "../images/wedding5.jpg",
+  "../images/wedding6.jpg"
+];
+
+let currentIndex = 0;
+
+function openLightbox(index) {
+
+  currentIndex = index;
+
+  document.getElementById("lightbox").classList.add("show");
+
+  document.getElementById("lightbox-img").src = images[index];
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").classList.remove("show");
+}
+
+function changeSlide(direction) {
+
+  currentIndex += direction;
+
+  if (currentIndex < 0) {
+    currentIndex = images.length - 1;
+  }
+
+  if (currentIndex >= images.length) {
+    currentIndex = 0;
+  }
+
+  document.getElementById("lightbox-img").src = images[currentIndex];
+}
+
+</script>
 
 <script src="../assets/script.js"></script>
-  
+
 </body>
 </html>
