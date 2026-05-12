@@ -921,7 +921,20 @@ input[type="checkbox"] {
   display: block;
 }
 
+/* weddings */
+.category-card:nth-child(1) img {
+  object-position: center 30%;
+}
 
+/* seniors */
+.category-card:nth-child(2) img {
+  object-position: center 50%;
+}
+
+/* families */
+.category-card:nth-child(3) img {
+  object-position: center 70%;
+}
 /* TEXT CONTENT */
 .category-content {
   padding: 28px;
