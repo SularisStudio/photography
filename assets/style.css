@@ -915,7 +915,7 @@ input[type="checkbox"] {
 /* IMAGE */
 .category-card img {
   width: 100%;
-  height: 320px;
+  height: 380px;
 
   object-fit: cover;
 
