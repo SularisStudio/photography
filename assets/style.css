@@ -207,6 +207,13 @@ button:hover {
   background-position: center 30%;
 }
 
+.gallery-hero {
+  height: 85vh;
+  background-image: url("../images/gallery-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* dark overlay */
 .hero-bg::before {
   content: "";
