@@ -804,3 +804,99 @@ input[type="checkbox"] {
 .arrow.right {
   right: 20px;
 }
+
+/* ========================================
+  background: rgba(0,0,0,0.94);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox.show {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 92%;
+  max-height: 88vh;
+
+  border-radius: 18px;
+}
+
+.close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+
+  color: white;
+  font-size: 46px;
+
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: white;
+  font-size: 60px;
+
+  cursor: pointer;
+  user-select: none;
+
+  padding: 20px;
+}
+
+.arrow.left {
+  left: 25px;
+}
+
+.arrow.right {
+  right: 25px;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 900px) {
+
+  .gallery-grid {
+    column-count: 2;
+  }
+
+  .category-card {
+    height: 300px;
+  }
+
+  .category-overlay h2 {
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .gallery-grid {
+    column-count: 1;
+  }
+
+  .category-card {
+    height: 240px;
+  }
+
+  .category-overlay {
+    padding: 20px 24px;
+  }
+
+  .category-overlay h2 {
+    font-size: 26px;
+  }
+
+  .arrow {
+    font-size: 42px;
+  }
+
+}
