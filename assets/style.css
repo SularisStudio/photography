@@ -890,6 +890,7 @@ input[type="checkbox"] {
   background: rgba(255,255,255,0.82);
   backdrop-filter: blur(12px);
 
+  
   border: 1px solid rgba(0,0,0,0.08);
   border-radius: 28px;
 
@@ -923,17 +924,17 @@ input[type="checkbox"] {
 
 /* weddings */
 .category-card:nth-child(1) img {
-  object-position: center 30%;
+  object-position: center 0%;
 }
 
 /* seniors */
 .category-card:nth-child(2) img {
-  object-position: center 50%;
+  object-position: center 20%;
 }
 
 /* families */
 .category-card:nth-child(3) img {
-  object-position: center 70%;
+  object-position: center 20%;
 }
 /* TEXT CONTENT */
 .category-content {
