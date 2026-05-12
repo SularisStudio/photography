@@ -924,17 +924,17 @@ input[type="checkbox"] {
 
 /* weddings */
 .category-card:nth-child(1) img {
-  object-position: center 0%;
+  object-position: center 50%;
 }
 
 /* seniors */
 .category-card:nth-child(2) img {
-  object-position: center 20%;
+  object-position: center 30%;
 }
 
 /* families */
 .category-card:nth-child(3) img {
-  object-position: center 20%;
+  object-position: center 30%;
 }
 /* TEXT CONTENT */
 .category-content {
