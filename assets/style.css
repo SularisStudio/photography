@@ -929,12 +929,12 @@ input[type="checkbox"] {
 
 /* seniors */
 .category-card:nth-child(2) img {
-  object-position: center 35%;
+  object-position: center 40%;
 }
 
 /* families */
 .category-card:nth-child(3) img {
-  object-position: center 30%;
+  object-position: center 35%;
 }
 /* TEXT CONTENT */
 .category-content {
