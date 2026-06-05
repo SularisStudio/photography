@@ -7,16 +7,15 @@ function toggleMenu() {
 let currentIndex = 0;
 let galleryImages = [];
 
-function openLightbox(imgElement) {
+// run once after page loads
+window.addEventListener("DOMContentLoaded", () => {
   const allImages = document.querySelectorAll(".gallery-item img");
-
-  // build array of full-size images from data-full
   galleryImages = Array.from(allImages).map(img => img.dataset.full);
+});
 
-  // find clicked image index
+function openLightbox(imgElement) {
   currentIndex = galleryImages.indexOf(imgElement.dataset.full);
 
-  // open lightbox + set image
   document.getElementById("lightbox").classList.add("show");
   document.getElementById("lightbox-img").src = imgElement.dataset.full;
 }
