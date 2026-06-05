@@ -947,12 +947,12 @@ input[type="checkbox"] {
 
 /* seniors */
 .category-card:nth-child(2) img {
-  object-position: center 10%;
+  object-position: center 15%;
 }
 
 /* families */
 .category-card:nth-child(3) img {
-  object-position: center 10%;
+  object-position: center 15%;
 }
 }
   
