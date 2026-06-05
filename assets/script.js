@@ -1,3 +1,5 @@
+alert("script loaded");
+
 console.log("Sularis Studio site loaded");
 
 function toggleMenu() {
