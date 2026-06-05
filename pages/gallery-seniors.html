@@ -1,30 +1,57 @@
 <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Senior</title>
+  
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+  
+<body>
+
+  <div class="nav">
+
+  <div class="logo">Sularis Studio</div>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="../index.html">Home</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
   </div>
 
- <div class="gallery-item">
-    <img src="../images/senior1.jpg" onclick="openLightbox(1)">
-  </div>
+</div>
+
+<section class="gallery-grid">
+
+<div class="gallery-item">
+  <img src="../images/thumbs/senior-1.jpg" data-full="../images/senior-1.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
+
+<div class="gallery-item">
+  <img src="../images/thumbs/senior-2.jpg" data-full="../images/senior-2.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
 
   <div class="gallery-item">
-    <img src="../images/senior2.jpg" onclick="openLightbox(1)">
-  </div>
+  <img src="../images/thumbs/senior-3.jpg" data-full="../images/senior-3.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
 
   <div class="gallery-item">
-    <img src="../images/senior3.jpg" onclick="openLightbox(2)">
-  </div>
+  <img src="../images/thumbs/senior-4.jpg" data-full="../images/senior-4.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
 
   <div class="gallery-item">
-    <img src="../images/senior4.jpg" onclick="openLightbox(3)">
-  </div>
+  <img src="../images/thumbs/senior-5.jpg" data-full="../images/senior-5.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
 
   <div class="gallery-item">
-    <img src="../images/senior5.jpg" onclick="openLightbox(4)">
-  </div>
-
-  <div class="gallery-item">
-    <img src="../images/senior6.jpg" onclick="openLightbox(5)">
-  </div>
-
+  <img src="../images/thumbs/senior-6.jpg" data-full="../images/senior-6.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
 </section>
 
 
@@ -45,49 +72,8 @@
   © 2026 Sularis Studio
 </footer>
 
-<script>
 
-const images = [
-  "../images/senior1.jpg",
-  "../images/senior2.jpg",
-  "../images/senior3.jpg",
-  "../images/senior4.jpg",
-  "../images/senior5.jpg",
-  "../images/senior6.jpg"
-];
-
-let currentIndex = 0;
-
-function openLightbox(index) {
-
-  currentIndex = index;
-
-  document.getElementById("lightbox").classList.add("show");
-
-  document.getElementById("lightbox-img").src = images[index];
-}
-
-function closeLightbox() {
-  document.getElementById("lightbox").classList.remove("show");
-}
-
-function changeSlide(direction) {
-
-  currentIndex += direction;
-
-  if (currentIndex < 0) {
-    currentIndex = images.length - 1;
-  }
-
-  if (currentIndex >= images.length) {
-    currentIndex = 0;
-  }
-
-  document.getElementById("lightbox-img").src = images[currentIndex];
-}
-
-</script>
-
+  
 <script src="../assets/script.js"></script>
 
 </body>
