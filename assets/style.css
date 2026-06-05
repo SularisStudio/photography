@@ -123,11 +123,7 @@ body {
   color: #111;
 }
 
-@media (max-width: 768px) {
-  .hero-bg {
-    background-position: 75% 50%;
-  }
-}
+
 
 /* SUBTITLE */
 .header p {
@@ -213,6 +209,12 @@ button:hover {
   background-position: center 30%;
 }
 
+
+@media (max-width: 768px) {
+  .hero-bg {
+    background-position: 75% 50%;
+  }
+}
 .gallery-hero {
   height: 85vh;
   background-image: url("../images/gallery-hero.jpg");
