@@ -1,4 +1,4 @@
-// alert("script loaded");  //debugging tool
+// alert("script loaded");  //debugging tool 
 
 console.log("Sularis Studio site loaded");
 
