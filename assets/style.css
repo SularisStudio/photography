@@ -939,10 +939,10 @@ input[type="checkbox"] {
 
 
 /* mobile*/
-@media (max-width: 768px) {
+@media (max-width: 1070px) {
   /* weddings */
 .category-card:nth-child(1) img {
-  object-position: center 40%;
+  object-position: center 25%;
 }
 
 /* seniors */
