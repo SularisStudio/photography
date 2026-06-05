@@ -936,6 +936,27 @@ input[type="checkbox"] {
 .category-card:nth-child(3) img {
   object-position: center 45%;
 }
+
+
+/* mobile*/
+@media (max-width: 768px) {
+  /* weddings */
+.category-card:nth-child(1) img {
+  object-position: center 50%;
+}
+
+/* seniors */
+.category-card:nth-child(2) img {
+  object-position: center 30%;
+}
+
+/* families */
+.category-card:nth-child(3) img {
+  object-position: center 35%;
+}
+}
+  
+  
 /* TEXT CONTENT */
 .category-content {
   padding: 28px;
