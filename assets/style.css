@@ -942,17 +942,17 @@ input[type="checkbox"] {
 @media (max-width: 768px) {
   /* weddings */
 .category-card:nth-child(1) img {
-  object-position: center 50%;
+  object-position: center 40%;
 }
 
 /* seniors */
 .category-card:nth-child(2) img {
-  object-position: center 30%;
+  object-position: center 25%;
 }
 
 /* families */
 .category-card:nth-child(3) img {
-  object-position: center 35%;
+  object-position: center 30%;
 }
 }
   
