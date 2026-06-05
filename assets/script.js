@@ -1,25 +1,24 @@
-
-
 console.log("Sularis Studio site loaded");
 
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("show");
 }
 
-const images = [
-  "../images/gallery1.jpg",
-  "../images/gallery2.jpg",
-  "../images/gallery3.jpg",
-  "../images/gallery4.jpg"
-];
-
 let currentIndex = 0;
+let galleryImages = [];
 
-function openLightbox(index) {
-  currentIndex = index;
+function openLightbox(imgElement) {
+  const allImages = document.querySelectorAll(".gallery-item img");
 
+  // build array of full-size images from data-full
+  galleryImages = Array.from(allImages).map(img => img.dataset.full);
+
+  // find clicked image index
+  currentIndex = galleryImages.indexOf(imgElement.dataset.full);
+
+  // open lightbox + set image
   document.getElementById("lightbox").classList.add("show");
-  document.getElementById("lightbox-img").src = images[index];
+  document.getElementById("lightbox-img").src = imgElement.dataset.full;
 }
 
 function closeLightbox() {
@@ -30,12 +29,12 @@ function changeSlide(direction) {
   currentIndex += direction;
 
   if (currentIndex < 0) {
-    currentIndex = images.length - 1;
+    currentIndex = galleryImages.length - 1;
   }
 
-  if (currentIndex >= images.length) {
+  if (currentIndex >= galleryImages.length) {
     currentIndex = 0;
   }
 
-  document.getElementById("lightbox-img").src = images[currentIndex];
+  document.getElementById("lightbox-img").src = galleryImages[currentIndex];
 }
