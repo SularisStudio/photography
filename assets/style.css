@@ -123,6 +123,12 @@ body {
   color: #111;
 }
 
+@media (max-width: 768px) {
+  .hero-bg {
+    background-position: 75% 50%;
+  }
+}
+
 /* SUBTITLE */
 .header p {
   font-size: 18px;
