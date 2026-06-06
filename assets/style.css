@@ -206,7 +206,7 @@ button:hover {
   /* background image */
   background-image: url("../images/Home1.jpg");
   background-size: cover;
-  background-position: 61% 30%;
+  background-position: center 30%;
 }
 
 
