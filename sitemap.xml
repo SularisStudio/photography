@@ -1,1 +1,27 @@
-test
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://sularisstudios.com/</loc>
+  </url>
+  <url>
+    <loc>https://sularisstudios.com/gallery/</loc>
+  </url>
+  <url>
+    <loc>https://sularisstudios.com/about/</loc>
+  </url>
+  <url>
+    <loc>https://sularisstudios.com/pricing/</loc>
+  </url>
+  <url>
+    <loc>https://sularisstudios.com/contact/</loc>
+  </url>
+    <url>
+    <loc>https://sularisstudios.com/gallery/wedding/</loc>
+  </url>
+    <url>
+    <loc>https://sularisstudios.com/gallery/senior/</loc>
+  </url>
+    <url>
+    <loc>https://sularisstudios.com/gallery/family/</loc>
+  </url>
+</urlset>
