@@ -257,7 +257,7 @@ button:hover {
   z-index: 1;
 
   text-align: center;
-  padding: 20px 40px;
+  padding: 12px 40px 20px 40px;
   border-radius: 20px;
 
   /*  CONTROL THIS FOR OPACITY */
@@ -285,11 +285,13 @@ button:hover {
 
 
 .hero-bg h1 {
+  margin: 0;
   font-size: 60px;
   margin-bottom: 10px;
 }
 
 .hero-bg p {
+  line-height: 1.1;
   font-size: 18px;
   opacity: 0.9;
 }
