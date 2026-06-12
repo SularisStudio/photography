@@ -1,1 +1,80 @@
-test
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Senior</title>
+  
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+  
+<body>
+
+  <div class="nav">
+
+  <div class="logo">Sularis Studios</div>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="/">Home</a>
+    <a href="/gallery/" class="active">Gallery</a>
+    <a href="/about/">About</a>
+    <a href="/pricing/">Pricing</a>
+    <a href="/contact/">Contact</a>
+  </div>
+
+</div>
+
+<section class="gallery-grid">
+
+<div class="gallery-item">
+  <img src="/images/thumbs/senior-1.jpg" data-full="/images/senior-1.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
+
+<div class="gallery-item">
+  <img src="/images/thumbs/senior-2.jpg" data-full="/images/senior-2.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
+
+  <div class="gallery-item">
+  <img src="/images/thumbs/senior-3.jpg" data-full="/images/senior-3.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
+
+  <div class="gallery-item">
+  <img src="/images/thumbs/senior-4.jpg" data-full="/images/senior-4.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
+
+  <div class="gallery-item">
+  <img src="/images/thumbs/senior-5.jpg" data-full="/images/senior-5.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
+
+  <div class="gallery-item">
+  <img src="/images/thumbs/senior-6.jpg" data-full="/images/senior-6.jpg" onclick="openLightbox(this)" loading="lazy" decoding="async">
+</div>
+</section>
+
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+
+  <span class="close" onclick="closeLightbox()">×</span>
+
+  <span class="arrow left" onclick="changeSlide(-1)">❮</span>
+
+  <img id="lightbox-img">
+
+  <span class="arrow right" onclick="changeSlide(1)">❯</span>
+
+</div>
+
+<footer>
+  © 2026 Sularis Studios LLC
+</footer>
+
+
+  
+<script src="/assets/script.js"></script>
+
+</body>
+</html>
