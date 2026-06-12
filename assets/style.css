@@ -209,7 +209,25 @@ button:hover {
   background-position: center 30%;
 }
 
+/* FAMILY GALLERY */
+.hero-FH {
+  height: 90vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; /* use to be center*/
+  text-align: center;
 
+   /* title location */
+  padding-bottom: 90px;
+  
+  position: relative;
+  
+  /* background image 
+  background-image: url("../images/Home1.jpg");
+  background-size: cover;
+  background-position: center 30%;
+  */
+}
 @media (max-width: 768px) {
   .hero-bg {
     background-position: 61% 50%;
