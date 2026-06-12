@@ -198,6 +198,7 @@ button:hover {
   align-items: flex-end;
   justify-content: center; /* use to be center*/
   text-align: center;
+  color: black;
 
    /* title location */
   padding-bottom: 90px;
