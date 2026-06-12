@@ -564,7 +564,7 @@ input:focus, textarea:focus {
 
 .checkbox {
   display: flex;
-  align-items: left;
+  align-items: flex-start;
   gap: 10px;
 
   font-size: 13px;
@@ -572,7 +572,6 @@ input:focus, textarea:focus {
 
   margin-bottom: 18px;
 
-  white-space: nowrap; /* prevents weird wrapping */
   background: rgba(255,255,255,0.6);
   border: 1px solid rgba(0,0,0,0.08);
   padding: 10px 12px;
@@ -714,17 +713,6 @@ input[type="checkbox"] {
   }
 }
 
-
-/* GALLERY GRID */
-.gallery-grid {
-  column-count: 3;
-  column-gap: 18px;
-
-  max-width: 1400px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
 /* MOBILE */
 @media (max-width: 900px) {
   .gallery-grid {
@@ -758,20 +746,6 @@ input[type="checkbox"] {
 .gallery-item img:hover {
   transform: scale(1.015);
   opacity: 0.96;
-}
-
-/* LIGHTBOX */
-.lightbox {
-  display: none;
-
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-
-  background: rgba(0,0,0,0.92);
-
-  justify-content: center;
-  align-items: center;
 }
 
 /* active */
