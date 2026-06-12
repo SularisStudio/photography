@@ -251,6 +251,10 @@ button:hover {
   z-index: 0;
 }
 
+.hero-content-box button {
+  margin-top: 10px;
+}
+
 /* FLOATING GLASS BOX */
 .hero-content-box {
   position: relative;
@@ -259,6 +263,7 @@ button:hover {
   text-align: center;
   padding: 18px 28px 22px 28px;
   border-radius: 20px;
+   gap: 8px;
 
   /*  CONTROL THIS FOR OPACITY */
   background: rgba(255, 255, 255, 0.12);
