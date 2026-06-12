@@ -183,7 +183,7 @@ button:hover {
 
 .hero-card h2 {
   font-size: 28px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .hero-card p {
@@ -257,7 +257,7 @@ button:hover {
   z-index: 1;
 
   text-align: center;
-  padding: 12px 40px 20px 40px;
+  padding: 18px 28px 22px 28px;
   border-radius: 20px;
 
   /*  CONTROL THIS FOR OPACITY */
@@ -270,7 +270,7 @@ button:hover {
   box-shadow: 0 20px 60px rgba(0,0,0,0.2);
 
   color: white;
-  max-width: 600px;  
+  max-width: 560px;  
 }
 
 .hero-content-box {
@@ -288,10 +288,12 @@ button:hover {
   margin: 0;
   font-size: 60px;
   margin-bottom: 10px;
+  line-height: 1.05;
 }
 
 .hero-bg p {
-  line-height: 1.1;
+  margin: 8px 0 0 0;
+  line-height: 1.2;
   font-size: 18px;
   opacity: 0.9;
 }
