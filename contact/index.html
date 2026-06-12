@@ -1,1 +1,87 @@
-test
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div class="nav">
+
+  <div class="logo">Sularis Studios</div>
+
+  <!-- hamburger icon (mobile only) -->
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <!-- links -->
+  <div class="nav-links" id="navLinks">
+    <a href="../index.html">Home</a>
+    <a href="../gallery/index.html">Gallery</a>
+    <a href="../about/index.html" >About</a>
+    <a href="../pricing/index.html">Pricing</a>
+    <a href="../contact/index.html" class="active">Contact</a>
+  </div>
+
+</div>
+
+<header class="hero-bg contact-hero">
+
+  <div class="hero-content-box">
+  <h1>Contact Us</h1>
+  <p>Tell us about your session and we’ll get back to you soon.</p>
+  </div>
+
+</header>
+
+<section class="contact-section">
+
+  <div class="hero-card contact-card static-card">
+
+    <h2>Send us a Message</h2>  
+  
+      <form action="https://formspree.io/f/xrejblpd" method="POST" class="contact-form">
+
+   <!-- Honeypot field (bots will fill this, humans won't) -->
+      <input type="text" name="_gotcha" style="display:none">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number: (555) 555-5555" required>
+      <label class="checkbox">
+        <input type="checkbox" name="sms_consent">
+          I agree to be contacted via text message regarding my inquiry.
+      </label>
+      <select name="service" required>
+        <option value="">What are you interested in?</option>
+        <option value="wedding">Wedding</option>
+        <option value="senior">Senior Photos</option>
+        <option value="family">Family Session</option>
+        <option value="corporate event">Corporate event</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="date" name="preferred_date" placeholder="Preferred Date">
+         <p class="hint">We shoot on weekends too.</p>
+      <input type="text" name="location" placeholder="Location (optional)">
+     
+      <textarea name="message" placeholder="Tell us about your session..." rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+      
+       
+    </form>
+  
+  </div>
+
+</section>
+  
+<div class="section">
+  <p>Email: Sularis.Photography@gmail.com</p>
+</div>
+
+<footer>© 2026 Sularis Studios LLC</footer>
+
+<script src="../assets/script.js"></script>
+  
+</body>
+</html>
