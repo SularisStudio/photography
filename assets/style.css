@@ -182,8 +182,10 @@ button:hover {
 }
 
 .hero-card h2 {
-  font-size: 28px;
-  margin-bottom: 0px;
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 0;
 }
 
 .hero-card p {
