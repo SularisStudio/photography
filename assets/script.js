@@ -37,3 +37,17 @@ function changeSlide(direction) {
 
   document.getElementById("lightbox-img").src = galleryImages[currentIndex];
 }
+
+function openReview(name, type, stars, text) {
+
+  document.getElementById("reviewName").textContent = name;
+  document.getElementById("reviewType").textContent = type;
+  document.getElementById("reviewStars").textContent = stars;
+  document.getElementById("reviewText").textContent = text;
+
+  document.getElementById("reviewModal").classList.add("show");
+}
+
+function closeReview() {
+  document.getElementById("reviewModal").classList.remove("show");
+}
