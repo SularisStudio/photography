@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Sularis Studios LLC | Minnesota Photography</title>
+
+  <meta name="description" content="Sularis Studios LLC is a Minnesota photography studio specializing in weddings, seniors, and family photography throughout the Twin Cities and Brainerd Lakes area.">
+
+  <meta name="msvalidate.01" content="FDCCE7DBFC10A95950AC8C251821EC59" />
+
+  <meta property="og:title" content="Sularis Studios LLC | Minnesota Photography">
+  <meta property="og:description" content="Wedding, senior, and family photography serving the Twin Cities and Brainerd Lakes areas of Minnesota.">
+  <meta property="og:url" content="https://sularisstudios.com">
+  <meta property="og:type" content="website">
+  
+  <link rel="stylesheet" href="assets/style.css"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Sularis Studios LLC",
+    "url": "https://sularisstudios.com",
+    "description":"Wedding, senior, and family photography serving the Twin Cities and Brainerd Lakes areas of Minnesota.",
+    "areaServed":[
+    "Twin Cities, Minnesota",
+    "Brainerd, Minnesota",
+    "Pequot Lakes, Minnesota",
+    "Nisswa, Minnesota" ]
+  }
+  </script>
+</head>
+
+
+<body>
+  
+<div class="nav">
+  
+  <div class="logo">Sularis Studios</div>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="/" class="active">Home</a>
+    <a href="/gallery/">Gallery</a>
+    <a href="/about/">About</a>
+    <a href="/pricing/">Pricing</a>
+    <a href="/contact/">Contact</a>
+  </div>
+</div>
+  <!-- HERO SECTION -->
+
+
+<header class="hero-bg">
+
+  <div class="hero-content-box">
+     <div class="hero-title">Sularis Studios Photography</div>
+    <p>Capturing the moments that matter most</p>
+  
+
+    <a href="/gallery/">
+      <button>View Gallery</button>
+    </a>
+  </div>
+
+</header>
+  
+  <!-- FEATURE SECTION -->
+  <div class="hero-card">
+    <h1>Minnesota Wedding, Senior, & Family Photography</h1>
+    <h2>
+      Serving the Twin Cities, Brainerd Lakes, Pequot Lakes,
+      Nisswa, and surrounding Minnesota communities.
+    </h2>
+  </div>
+
+  <!-- SERVICES PREVIEW -->
+  <div class="section">
+
+    <div style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    ">
+
+      <div class="hero-card">
+        <h3>Weddings</h3>
+        <p>Timeless storytelling of your big day.</p>
+      </div>
+
+      <div class="hero-card">
+        <h3>Seniors</h3>
+        <p>Modern portraits that feel authentic.</p>
+      </div>
+
+      <div class="hero-card">
+        <h3>Families</h3>
+        <p>Natural, emotional family moments.</p>
+      </div>
+
+    </div>
+  </div>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+
+  <h2 class="section-title">What Clients Are Saying</h2>
+  <p class="section-subtitle">
+    Real experiences from couples, families, and seniors.
+  </p>
+
+  <div class="reviews-grid">
+
+    <div class="review-card"
+         onclick="openReview(
+         'Sarah & Jake',
+         'Wedding Photography',
+         '★★★★★',
+         'Nick captured every moment perfectly. From our engagement session to our wedding day, everything felt effortless. The photos are absolutely stunning and we will treasure them forever.')">
+
+      <h3>Sarah & Jake</h3>
+      <span class="review-type">Wedding Photography</span>
+
+      <div class="stars">★★★★★</div>
+
+      <p>
+        "Nick captured every moment perfectly. The photos are absolutely stunning..."
+      </p>
+
+      <div class="read-more">Read Full Review →</div>
+
+    </div>
+
+    <div class="review-card"
+         onclick="openReview(
+         'Emma',
+         'Senior Photography',
+         '★★★★★',
+         'Nick made me feel comfortable the entire session. The photos looked natural and genuinely felt like me.')">
+
+      <h3>Emma</h3>
+      <span class="review-type">Senior Photography</span>
+
+      <div class="stars">★★★★★</div>
+
+      <p>
+        "Nick made me feel comfortable the entire session..."
+      </p>
+
+      <div class="read-more">Read Full Review →</div>
+
+    </div>
+
+    <div class="review-card"
+         onclick="openReview(
+         'The Johnson Family',
+         'Family Session',
+         '★★★★★',
+         'Working with young kids is never easy, but Nick made the experience fun and stress-free. The photos turned out incredible.')">
+
+      <h3>The Johnson Family</h3>
+      <span class="review-type">Family Session</span>
+
+      <div class="stars">★★★★★</div>
+
+      <p>
+        "Working with young kids is never easy, but Nick made it fun..."
+      </p>
+
+      <div class="read-more">Read Full Review →</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  
+  <!-- CALL TO ACTION -->
+  <div class="hero-card">
+    <h2>Let’s create something beautiful</h2>
+    <p>Book a session or explore the gallery to get started.</p>
+
+    <div style="margin-top: 20px;">
+      <a href="/contact/">
+        <button>Contact Us</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Sularis Studios LLC
+  </footer>
+  
+<script src="assets/script.js"></script>
+
+<!-- REVIEW MODAL -->
+<div class="review-modal" id="reviewModal">
+
+  <div class="review-modal-content">
+
+    <span class="close-review" onclick="closeReview()">×</span>
+
+    <h2 id="reviewName"></h2>
+
+    <p class="review-modal-type" id="reviewType"></p>
+
+    <div class="stars" id="reviewStars"></div>
+
+    <p id="reviewText"></p>
+
+  </div>
+
+</div>  
+</body>
+</html>
