@@ -1266,8 +1266,10 @@ input[type="checkbox"] {
 }
 
 .about-image figcaption {
+  display: block;
+  width: 100%;
   text-align: center;
-  font-size: 14px;
   margin-top: 8px;
+  font-size: 14px;
   font-style: italic;
 }
