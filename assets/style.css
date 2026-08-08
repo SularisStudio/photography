@@ -1258,3 +1258,20 @@ input[type="checkbox"] {
 .review-modal-content p {
   line-height: 1.7;
 }
+
+@media (max-width: 768px) {
+  .about-image img {
+    height: 450px;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
+.about-image figcaption {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 14px;
+  font-style: italic;
+}
