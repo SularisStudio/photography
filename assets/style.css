@@ -1264,3 +1264,10 @@ input[type="checkbox"] {
     object-position: center 10%;
   }
 }
+
+.about-image figcaption {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8px;
+  font-style: italic;
+}
